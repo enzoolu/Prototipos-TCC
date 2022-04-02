@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&family=Ubuntu&display=swap');
+
+:root {
+    --preto: #000;
+    --branco: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    background-color: var(--preto);
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header h1 {
+    color: var(--branco);
+    margin-left: 15px;
+}
+
+.header .menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.header .menu ul li a {
+    display: flex;
+    font-size: 16px;
+    color: var(--branco);
+    margin: 5px;
+    padding: 8px;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.header .menu ul li a:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.content {
+    height: 100%;
+    background: rgb(239,1,7);
+    background: linear-gradient(156deg, rgba(170,0,0,1) 50%, rgba(239,1,7,1) 75%);
+}
+
+.content .introducao {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.content .introducao img {
+    padding: 70px;
+    margin-right: 100px;
+    margin-top: 15px;
+}
+
+.content .introducao p {
+    font-size: 20px;
+    color: var(--branco);
+    width: 30%;
+    margin-left: 150px;
+}
+
+.content .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 10px;
+}
+
+.content .grid img {
+    height: 350px;
+    border-radius: 25px;
+    width: 95%;
+    margin: 10px auto;
+    transition: 0.3s;
+}
+
+.content .grid img:hover {
+    transform: scale(1.03);
+    border-radius: 5px;
+}
+
+.content hr {
+    width: 10%;
+    margin-left: 45%;
+}
+
+.content .comoDoar {
+    display: flex;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.content .comoDoar h1 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.content .comoDoar p {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 90%;
+    margin-bottom: 60px;
+}
+
+.content .quemPodeDoar {
+    padding-top: 40px;
+    padding-left: 50px;
+    background-color: #fff;
+}
+
+.content .quemPodeDoar img {
+    width: 50%;
+}
+
+.content .pqDoar {
+    margin-top: 40px;
+    color: #fff;
+}
+
+.content .pqDoar h1 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.content .pqDoar p {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 60%;
+    padding-bottom: 40px;
+}
+
+.content .quiz {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 70px;
+    align-items: center;
+    color: #DA2814;
+    padding-bottom: 70px;
+}
+
+.content .quiz h1 {
+    font-size: 30px;
+}
+
+.content .quiz h2 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.content .quiz a {
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #DA2814;
+    transition: 0.4s;
+}
+
+.content .quiz a:hover {
+    background-color: #fff;
+    color: #DA2814;
+}
+
+.content .app {
+    margin-top: 80px;
+    padding-bottom: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.content .app h1 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.content .app p {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 60%;
+    padding-bottom: 40px;
+}
+
+.content .app a {
+    padding: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #EF0006;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.content .app a:hover {
+    background-color: #EF0006;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+footer {
+    height: 35px;
+    background-color: #000;
+}
