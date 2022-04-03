@@ -54,6 +54,9 @@ body {
 
 .content {
     height: 100%;
+}
+
+.content .backgound {
     background: rgb(239,1,7);
     background: linear-gradient(156deg, rgba(170,0,0,1) 50%, rgba(239,1,7,1) 75%);
 }
@@ -104,7 +107,7 @@ body {
 .content .comoDoar {
     display: flex;
     color: #fff;
-    margin-top: 40px;
+    padding-top: 60px;
 }
 
 .content .comoDoar h1 {
@@ -131,8 +134,10 @@ body {
 }
 
 .content .pqDoar {
-    margin-top: 40px;
+    padding-top: 40px;
     color: #fff;
+    background: rgb(239,1,7);
+    background: linear-gradient(156deg, rgba(170,0,0,1) 50%, rgba(239,1,7,1) 75%);
 }
 
 .content .pqDoar h1 {
@@ -185,11 +190,13 @@ body {
 }
 
 .content .app {
-    margin-top: 80px;
+    padding-top: 80px;
     padding-bottom: 60px;
     color: #fff;
     display: flex;
     align-items: center;
+    background: rgb(239,1,7);
+    background: linear-gradient(156deg, rgba(170,0,0,1) 50%, rgba(239,1,7,1) 75%);
 }
 
 .content .app h1 {
@@ -225,4 +232,15 @@ body {
 footer {
     height: 35px;
     background-color: #000;
+}
+
+.anime {
+	opacity: 0;
+	transform: translate3d(-100px,0,0);
+	transition: .3s;
+}
+
+.anime-start {
+	opacity: 1;
+	transform: translate3d(0,0,0);
 }
