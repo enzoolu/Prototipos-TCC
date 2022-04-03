@@ -1,10 +1,9 @@
 $('nav a').click(function(e){
 	e.preventDefault();
 	let id = $(this).attr('href'),
-			menuHeight = $('nav').innerHeight(),
-			targetOffset = $(id).offset().top;
+		targetOffset = $(id).offset().top;
 	$('html, body').animate({
-		scrollTop: targetOffset - menuHeight
+		scrollTop: targetOffset - 55
 	}, 500);
 });
 
