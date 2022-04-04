@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&family=Ubuntu&display=swap');
 
-:root {
-    --preto: #000;
-    --branco: #fff;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -16,8 +11,9 @@ body {
 }
 
 .header {
-    background-color: var(--preto);
+    background-color: #000;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 55px;
     align-items: center;
@@ -28,11 +24,11 @@ body {
 
 .header a {
     text-decoration: none;
-    color: var(--branco);
+    color: #fff;
 }
 
 .header h1 {
-    color: var(--branco);
+    color: #fff;
     margin-left: 15px;
 }
 
@@ -44,7 +40,7 @@ body {
 .header .menu ul li a {
     display: flex;
     font-size: 16px;
-    color: var(--branco);
+    color: #fff;
     margin: 5px;
     padding: 8px;
     text-decoration: none;
@@ -80,7 +76,7 @@ body {
 
 .content .introducao p {
     font-size: 20px;
-    color: var(--branco);
+    color: #fff;
     width: 30%;
     margin-left: 150px;
 }
